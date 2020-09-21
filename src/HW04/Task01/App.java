@@ -4,17 +4,14 @@ public class App {
 
     public static void main(String[] args) {
 
-        Car[] cars = new Car[2];
-        cars[0] = new Lorry();
-        cars[1] = new SportsCar();
+        Shape[] shape = new Shape[3];
+        shape[0] = new Triangle();
+        shape[1] = new Circle();
+        shape[2] = new Rectangle();
 
-        for (Car c : cars) {
+        for (Shape sh : shape) {
 
-            c.start();
-            c.turnLeft();
-            c.turnRight();
-            c.stop();
-            c.printInfo();
+            System.out.println("Площадь фигуры: " + sh.square());
 
         }
 
